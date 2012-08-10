@@ -1,0 +1,626 @@
+<!doctype html>  
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>HTML5 and FRIENDS</title>
+
+		<meta name="description" content="HTML5 and Friends Discussion for the LSDG">
+		<meta name="author" content="Dustin Brown - dustin.w.brown@gmail.com">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+        <link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/forkit.css">
+
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+       
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>HTML5 and FRIENDS</h1>
+                    <br><br>
+					<h3 class="inverted">Lubbock Software Developers Group (LSDG)</h3>
+
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+				</section>
+				
+				<section>
+					<h2>THANKS!</h2>
+					<p>
+						Thank you for everyone involved in helping get the LSDG group rolling and believed in it.
+					</p>
+					<p>
+						<ul>
+						<li><a href="">Jay Rushing</a> on <a href="http://twitter.com/hakimel">LinkedIn</a></li>
+						<li><a href="">Mitzi Dunn</a> on <a href="http://twitter.com/hakimel">LinkedIn</a></li>
+						<li><a href="">ARMtech Insurance Services</a> on <a href="http://twitter.com/hakimel">facebook</a></li>
+						<li>Speical thanks to <a href="http://hakim.se">Michael Brown (1948-2012)</a> for getting me my first computer 20 years ago.  This one is for you Dad. </li>
+					</ul>
+					</p>
+
+					<aside class="notes">
+						SERVER NOTES</aside>
+				</section>
+				<section>
+                <section>
+              
+                <h2>What is HTML5?</h2>
+               <p> <a href="" class="image" style="border:none">
+							<img height="256" width="256" src="imgs/HTML5_Logo_512.png">
+						</a>
+                </p>
+                <br/>
+                <h3>Let's dive into the fundamentals.</h3>
+                <p><small>(arrow or swipe down)</small></p>
+
+                </section>
+                <section>
+						<h2 class="inverted">THE FUNDAMENTALS</h2>
+						<p>HTML5 Brings us a lot of sizzle but we have to get familiar with...</p>
+						<ol>
+						<li class="fragment">the new <code>DOCTYPE</code></li>
+						<li class="fragment">Optimizing <code>SCRIPT</code><em> and </em> <code>SCRIPT</code> tags</li>
+						<li class="fragment"><strong>EMPHASIS</strong></li>
+                        <li class="fragment">As well as new tags and semantics</li>
+					</ol>
+					</section>
+                    <section>
+                    <h2 class="inverted">First HTML5 Document</h2>
+					<script src="https://gist.github.com/3239994.js"> </script>
+				</section>
+                 <section>
+					<h2>New Semantic/Structural Elements</h2>
+
+<table>
+
+<tr>
+
+<th align="center" width="110">Tag</th>
+
+<th align="center">Description</th>
+
+</tr>
+
+<tr>
+
+<td>&lt;article&gt;</td>
+
+<td>Defines an article</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;aside&gt;</td>
+
+<td>Defines content aside from the page content</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;bdi&gt;</td>
+
+<td>Isolates a part of text that might be formatted in a different direction 
+
+from other text outside it</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;command&gt;</td>
+
+<td>Defines a command button that a user can invoke</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;details&gt;</td>
+
+<td>Defines additional details that the user can view or hide</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;summary&gt;</td>
+
+<td>Defines a visible heading for a &lt;details&gt; element</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;figure&gt;</td>
+
+<td>Specifies self-contained content, like illustrations, diagrams, photos, code 
+
+listings, etc.</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;figcaption&gt;</td>
+
+<td>Defines a caption for a &lt;figure&gt; element</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;footer&gt;</td>
+
+<td>Defines a footer for a document or section</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;header&gt;</td>
+
+<td>Defines a header for a document or section</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;hgroup&gt;</td>
+
+<td>Groups a set of &lt;h1&gt; to &lt;h6&gt; elements when a heading has multiple levels</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;mark&gt;</td>
+
+<td><mark>Defines marked/highlighted text</mark></td>
+
+</tr>
+
+<tr>
+
+<td>&lt;meter&gt;</td>
+
+<td>Defines a scalar measurement within a known range (a gauge)</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;nav&gt;</td>
+
+<td>Defines navigation links</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;progress&gt;</td>
+
+<td>Represents the progress of a task</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;rt&gt;</td>
+
+<td>Defines an explanation/pronunciation of characters (for East Asian 
+
+typography)</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;rp&gt;</td>
+
+<td>Defines what to show in browsers that do not support ruby annotations</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;section&gt;</td>
+
+<td>Defines a section in a document</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;time&gt;</td>
+
+<td>Defines a date/time</td>
+
+</tr>
+
+</table>
+
+<br />
+</section>
+<section>
+
+
+
+<h2>New Media Elements</h2>
+
+<p>HTML5 offers new elements for media content:</p>
+
+<table>
+
+<tr>
+
+<th align="center" width="110">Tag</th>
+
+<th align="center">Description</th>
+
+</tr>
+
+<tr>
+
+<td>&lt;audio&gt;</td>
+
+<td>Defines sound content</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;video&gt;</td>
+
+<td>Defines a video or movie</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;source&gt;</td>
+
+<td>Defines multiple media resources for &lt;video&gt; and &lt;audio&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;embed&gt;</td>
+
+<td>Defines a container for an external application or interactive content (a plug-in)</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;track&gt;</td>
+
+<td>Defines text tracks for &lt;video&gt; and &lt;audio&gt;</td>
+
+</tr>
+
+</table>
+
+<br />
+</section>
+
+				</section>
+                </section>
+                
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>
+							Slides can be nested inside of other slides,<br/>
+							try pressing <a href="#/2/1">down</a>.
+						</p>
+						<a href="#/2/1" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Press down or up to navigate.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>Cornify</p>
+						<a class="test" href="http://cornify.com">
+							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 3</h2>
+						<p>That's it, time to go back up.</p>
+						<a href="#/2" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h2>Holistic Overview</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview!
+					</p>
+				</section>
+
+				<section>
+					<h2>Works in Mobile Safari</h2>
+					<p>
+						Try it out! You can swipe through the slides pinch your way to the overview.
+					</p>
+				</section>
+
+				<section>
+					<h2>Marvelous Unordered List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section data-markdown>
+					## Markdown support
+					
+					For those of you who like that sort of thing.  
+                    Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+
+					<pre><code contenteditable style="margin-top: 20px;">&lt;section data-markdown&gt;
+  ## Markdown support
+
+  For those of you who like that sort of thing. 
+  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+&lt;/section&gt;
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like:
+					</p>
+					<ul>
+						<li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
+						<li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
+						<li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
+						<li><a href="http://lab.hakim.se/reveal-js/?transition=linear">Linear</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<section data-state="alert">
+						<h2>Global State</h2>
+						<p>
+							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+							will be added as a class to the document element when the slide is open. This let's you
+							apply broader style changes, like switching the background.
+						</p>
+						<a href="#/7/1" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+						</a>
+					</section>
+					<section data-state="blackout">
+						<h2>"blackout"</h2>
+						<a href="#/7/2" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+						</a>
+					</section>
+					<section data-state="soothe">
+						<h2>"soothe"</h2>
+						<a href="#/7/0" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+				<section data-state="customevent">
+					<h2>Custom Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						The nice thing about standards is that there are so many to choose from</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
+					</blockquote>
+				</section>
+				
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+    
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i < len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) ) {
+        node.className += ' roll';
+      }
+    };
+  }
+}
+					</code></pre>
+					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+				
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,<br/>
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Fragmented Views</h2>
+					<p>Hit the next arrow...</p>
+					<p class="fragment">... to step through ...</p>
+					<ol class="inverted">
+						<li class="fragment"><code>any type</code></li>
+						<li class="fragment"><em>of view</em></li>
+						<li class="fragment"><strong>fragments</strong></li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Spectacular image!</h2>
+					<a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
+						<img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
+					</a>
+				</section>
+				
+				<section>
+					<h2>Stellar Links</h2>
+					<ul>
+						<li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
+						<li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
+						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>THE END</h1>
+					<h3 class="inverted"></h3>
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+<!-- The contents (if there's no contents the ribbon acts as a link) -->
+		<div class="forkit-curtain">
+			<div class="close-button"></div>
+			<h1>LUBBOCK SOFTWARE DEVELOPERS GROUP (LSDG)</h1>
+            <small>follow and join us on</small>
+			<a href="https://www.facebook.com/groups/378191042235127/"><img src="imgs/fb-glow.png" height="200" width="200"></a>
+			<a href="http://www.linkedin.com/groups/Lubbock-Software-Developers-Group-4504380/about"><img src="imgs/lin-glow.png"  height="200" width="200"></a>
+			<a href="https://twitter.com/WillCode2Surf"><img src="imgs/twitter-glow.png"  height="200" width="200"></a>
+			<a href="https://plus.google.com/u/1/b/101548168416037255049/101548168416037255049/posts"><img src="imgs/google-glow.png"  height="200" width="200"></a>
+            <h3>Dustin Brown - 08.02.12</h3>
+            <small>follow me on <a href="http://twitter.com/">twitter @willCode2Surf</a></small>
+		</div>
+
+		<!-- The ribbon -->
+		<a class="forkit" data-text="About LSDG" data-text-detached="Pull! Pull! >" href="https://github.com/hakimel/forkit.js"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="LubbockSoftwareDevelopersGroup"></a>
+
+		<script src="js/forkit.js"></script>
+
+
+
+		<script src="lib/js/head.min.js"></script>
+
+		<script>
+			// Scripts that should be loaded before initializing
+			var scripts = [];
+
+			// If the browser doesn't support classList, load a polyfill
+			if( !document.body.classList ) {
+				scripts.push( 'lib/js/classList.js' );
+			}
+
+			// Load markdown parser if there are slides defined using markdown
+			if( document.querySelector( '[data-markdown]' ) ) {
+				scripts.push( 'lib/js/showdown.js' );
+				scripts.push( 'lib/js/data-markdown.js' );
+			}
+
+			// If we're runnning the notes server we need to include some additional JS
+			// TODO Is there a better way to determine if we're running the notes server?
+			if( window.location.host === 'localhost:1947' ) {
+				scripts.push( 'socket.io/socket.io.js' );
+				scripts.push( 'plugin/speakernotes/client.js' );
+			}
+
+			scripts.push( 'js/reveal.js' );
+
+			// Load the scripts and, when completed, initialize reveal.js
+			head.js.apply( null, scripts.concat([function() {
+
+				// Fires when a slide with data-state=customevent is activated
+				Reveal.addEventListener( 'customevent', function() {
+					console.log( '"customevent" has fired' );
+				} );
+
+				// Fires each time a new slide is activated
+				Reveal.addEventListener( 'slidechanged', function( event ) {
+					// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+				} );
+
+				// Full list of configuration options available here:
+				// https://github.com/hakimel/reveal.js#configuration
+				Reveal.initialize({
+					controls: true,
+					progress: true,
+					history: true,
+					
+					theme: Reveal.getQueryHash().theme || 'default', // default/neon/beige
+					transition: Reveal.getQueryHash().transition || 'default' // default/cube/page/concave/linear(2d)
+				});
+
+			}]));
+			
+			// Load highlight.js for syntax highlighting of code samples
+			head.js( 'lib/js/highlight.js', function() { 
+				hljs.initHighlightingOnLoad(); 
+			} );
+		</script>
+
+	</body>
+</html>
